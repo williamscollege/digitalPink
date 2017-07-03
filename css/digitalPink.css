@@ -171,7 +171,7 @@ Gallery items
 .photo figcaption {
 	position: absolute;
 	box-sizing: border-box;
-	bottom: -4em;
+	bottom: -7em;
 	width: 100%;
 	padding: 0 1em;
 	background: hsla(0, 0%, 100%, .75);
@@ -189,4 +189,17 @@ Gallery items
 
 .photo a:hover figcaption {
 	bottom: 0;
+}
+
+.meanrank, .crayolarank, .plainrank, .recolorrank, .toonrank, .islandizerank {
+	display: none;
+}
+
+.circleContainer {
+	width: 100%;
+	padding: 1.5%;
+}
+
+.circles {
+	width: 15%;
 }
