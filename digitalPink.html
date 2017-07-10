@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Pink Prototype</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/digitalPink.css" type="text/css" media="all">
 </head>
 
@@ -39,7 +40,34 @@
 
         <section class="gallery">
             <article class="photo">
-                <a href="images/IMG_78.38.31.jpg">
+                <a href="images/original/IMG_78.38.31.jpg" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption='Original Image
+<div class="lightboxCircleContainer">
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="95.2" fill="pink" />
+                </svg>
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="97" fill="pink" />
+                </svg>
+
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="100" fill="pink" />
+                </svg>
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="89" fill="pink" />
+                </svg>
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="98" fill="pink" />
+                </svg>
+                <svg class="circles" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="100" fill="gray" />
+                    <circle cx="100" cy="100" r="92" fill="pink" />
+                </svg>
+                </div>'>
                     <figure>
                         <img src="images/IMG_78.38.31.jpg" alt="">
                         <figcaption>
@@ -80,6 +108,11 @@
                             </p></figcaption>
                     </figure>
                 </a>
+                <a href="images/plain/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Plain Image" style="display:none;"></a>
+                <a href="images/crayola/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Crayola Image" style="display:none;"></a>
+                <a href="images/recolor/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Recolor Image" style="display:none;"></a>
+                <a href="images/toon/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Toon Image" style="display:none;"></a>
+                <a href="images/islandize/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Islandize Image" style="display:none;"></a>
             </article>
             <article class="photo">
                 <a href="images/TI_5_a.jpg">
@@ -549,7 +582,9 @@
 
     <script src="JS/libs/jquery-3.1.1.min.js"></script>
     <script src="JS/libs/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
     <script src="JS/digitalPink.js"></script>
+    <script src="JS/fancyboxGroups.js"></script>
 
 </body>
 

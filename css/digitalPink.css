@@ -203,3 +203,49 @@ Gallery items
 .circles {
 	width: 15%;
 }
+
+.lightboxCircleContainer {
+	width: 30%;
+	padding: 1.5%;
+	display: none;
+}
+
+.fancybox-thumbs>ul>li {
+	box-sizing: content-box;
+}
+
+.fancybox-thumbs {
+	display: block;
+}
+
+/*******
+Pager
+ *****/
+
+#links {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+	padding-top: 10px;
+	list-style: none;
+	text-align: center;
+	z-index: 99999;
+}
+
+#links li {
+	display: inline;
+	padding: 0 5px;
+}
+
+#links li label {
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	cursor: pointer;
+}
+
+#links li.active label {
+	background-color: white;
+}

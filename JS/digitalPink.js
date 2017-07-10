@@ -75,3 +75,4 @@ $('#filters').on( 'click', 'button', function() {
 $gallery.imagesLoaded().progress( function() {
     $gallery.isotope('layout');
 })
+
