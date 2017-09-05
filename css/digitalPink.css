@@ -119,7 +119,7 @@ Main area
 	transition: all .2s;
 }
 
-.photo {
+.pinkart {
 	box-sizing: border-box;
 	padding: 5px;
 }
@@ -127,7 +127,7 @@ Main area
 
 
 @media screen and (min-width: 40em) {
-	.photo {
+	.pinkart {
 		width: 50%;
 	}
 	.double {
@@ -136,7 +136,7 @@ Main area
 }
 
 @media screen and (min-width: 60em) {
-	.photo {
+	.pinkart {
 		width: 33%;
 	}
 	.double {
@@ -145,7 +145,7 @@ Main area
 }
 
 @media screen and (min-width: 80em) {
-	.photo {
+	.pinkart {
 		width: 25%;
 	}
 	.double {
@@ -157,18 +157,18 @@ Main area
 Gallery items
 --------------------------------------------------------------*/
 
-.photo figure {
+.pinkart figure {
 	position: relative;
 	margin: 0;
 	overflow: hidden;
 }
 
-.photo img {
+.pinkart img {
 	display: block;
 	width: 100%;
 }
 
-.photo figcaption {
+.pinkart figcaption {
 	position: absolute;
 	box-sizing: border-box;
 	bottom: -7em;
@@ -178,16 +178,16 @@ Gallery items
 	transition: bottom .2s;
 }
 
-.photo h2 {
+.pinkart h2 {
 	font-size: 1.2em;
 	font-weight: lighter;
 }
 
-.photo a {
+.pinkart a {
 	color: black;
 }
 
-.photo a:hover figcaption {
+.pinkart a:hover figcaption {
 	bottom: 0;
 }
 
@@ -248,4 +248,26 @@ Pager
 
 #links li.active label {
 	background-color: white;
+}
+
+.lg-group {
+    text-align: center;
+    margin: auto !important;
+}
+
+
+.lg-outer .lg-thumb-item img {
+    height: 50px; !important;
+}
+
+.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
+    bottom: 70px;
+}
+
+.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
+    border-color: pink;
+}
+
+.lg-outer .lg-thumb-item {
+    border: 2px solid transparent;
 }
