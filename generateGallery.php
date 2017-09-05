@@ -10,6 +10,36 @@
 
 function generateGallerySidecards ()
 {
+    /***
+     * Takes the rank of the image and returns the filename of the appropriate thumbnail
+     *
+     * @param $rank - the rank of the image
+     *
+     */
+    function chooseThumbnail ($rank) {
+
+        $i = ceil ($rank / 100); // round up to the nearest integer
+
+        switch ($i) {
+            case 1:
+                return ("1-100.png");
+                break;
+            case 2:
+                return ("101-200.png");;
+                break;
+            case 3:
+                return ("201-300.png");
+                break;
+            case 4:
+                return ("301-400.png");
+                break;
+            case 5:
+                return ("401-500.png");
+                break;
+            default:
+                return ("over500.png");
+        }
+    }
 
 //Pull exhibit data from tab-separated file into an associative array
     $checklistfilename = "data/pinkexhibit.tsv";
@@ -56,7 +86,7 @@ function generateGallerySidecards ()
         $pinkgallery .= '
                         "src":' . " 'images/original/" . $pinkimage['filename'] . ".jpg',";
         $pinkgallery .= "
-                        'thumb': 'images/original/thumb-" . $pinkimage['filename'] . ".png',";
+                        'thumb': 'images/thumbs/" . chooseThumbnail($pinkimage['mean-rank']) . "',";
         $pinkgallery .= "
                  'subHtml': '" . $pinkimage['image-info'] . "'
                  ";
@@ -75,7 +105,8 @@ function generateGallerySidecards ()
             $sidecarImage = $algorithm['name'] . "/" . $pinkimage['filename'] .".png";
 
             // Thumbnails are stored in the algorithm directory, prefaced by thumb- and are assumed to be svg images
-            $sidecarThumb = $algorithm['name'] . "/thumb-" . $pinkimage['filename'] .".png";
+            $rankValue = $algorithm['name']."-rank";
+            $sidecarThumb = "/thumbs/" . chooseThumbnail($pinkimage[$rankValue]);
 
             $pinkgallery .= ', {
                         "src": ';
