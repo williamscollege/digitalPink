@@ -86,7 +86,7 @@ function generateGallerySidecards ()
         $pinkgallery .= '
                         "src":' . " 'images/original/" . $pinkimage['filename'] . ".jpg',";
         $pinkgallery .= "
-                        'thumb': 'images/thumbs/" . chooseThumbnail($pinkimage['mean-rank']) . "',";
+                        'thumb': 'images/thumbs/original.png',";
         $pinkgallery .= "
                  'subHtml': '" . $pinkimage['image-info'] . "'
                  ";

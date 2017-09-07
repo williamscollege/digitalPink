@@ -1,591 +1,916 @@
 <!DOCTYPE html>
-<html lang="en-US" xmlns="http://www.w3.org/1999/html">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Digital Pink Prototype</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css">
+
+    <link href="JS/libs/lightGallery/css/lightgallery.css" rel="stylesheet">
     <link rel="stylesheet" href="css/digitalPink.css" type="text/css" media="all">
+    <script src="JS/libs/jquery-3.1.1.min.js"></script>
+    <script src="JS/libs/picturefill.min.js"></script>
+    <script src="JS/libs/lightGallery/js/lightgallery-all.js"></script>
+    <script src="JS/libs/jquery.mousewheel.min.js"></script>
+
 </head>
 
 <body>
+<script type="text/javascript">$(document).ready(function (){
+    $('#_657I').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/65_7_I.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/65_7_I.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/65_7_I.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/65_7_I.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/65_7_I.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/65_7_I.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-    <header class="masthead">
-        <h1 class="site-title">Digital Pink</h1>
-        <p class="site-description">An exploration of the algorithms supporting the curation process.</p>
-    </header><!-- .masthead -->
+    $('#_IMG783820').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_78.38.20.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/IMG_78.38.20.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_78.38.20.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_78.38.20.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_78.38.20.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_78.38.20.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-    <main class="main-area">
+    $('#_IMG783831').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_78.38.31.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>Eduardo Luigi Paolozzi<br>print<br>Fifty Nine Varieties of Paradise (from "General Dynamic F.U.N."), 1968<br>color photo lithograph on paper<br>sheet: 14 15/16 x 9 15/16 in. (38 x 25.2 cm)<br>Gift of Ben Wunsch through the Martin S. Ackerman Foundation<br>78.38.31<br>1a) WCMA, PR, C, SHLF, 7 (19 Jan 2017)</p>'
+            }, {
+                "src": 'images/pixel/IMG_78.38.31.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_78.38.31.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_78.38.31.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_78.38.31.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_78.38.31.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-        <h2>Filter to the top 100 by algorithm</h2>
-        <div id="filters" class="button-group">  <button class="button is-checked" data-filter="*">show all</button>
-            <button class="button" data-filter="plainLessThan100">Plain</button>
-            <button class="button" data-filter="crayolaLessThan100">Crayola</button>
+    $('#_79525').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/79_52_5.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/79_52_5.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/79_52_5.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/79_52_5.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/79_52_5.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/79_52_5.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-        </div>
+    $('#_7954F').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/79_54_F.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/79_54_F.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/79_54_F.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/79_54_F.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/79_54_F.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/79_54_F.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
+    $('#_7954K').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/79_54_K.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/79_54_K.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/79_54_K.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/79_54_K.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/79_54_K.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/79_54_K.png',
+                'thumb': 'images//thumbs/401-500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-        <h2>Sorts</h2>
+    $('#_IMG802810').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_80.28.10.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/IMG_80.28.10.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_80.28.10.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_80.28.10.png',
+                'thumb': 'images//thumbs/401-500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_80.28.10.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_80.28.10.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-        <div id="sorts" class="button-group">
-            <button class="button is-checked" data-sort-by="meanrank">Mean Rank</button>
-            <button class="button" data-sort-by="plainrank">Plain Algorithm Rank</button>
-            <button class="button" data-sort-by="crayolarank">Crayola Algorithm Rank</button>
-            <button class="button" data-sort-by="recolorrank">Recolor Algorithm Rank</button>
-            <button class="button" data-sort-by="toonrank">Toon Algorithm Rank</button>
-            <button class="button" data-sort-by="islandizerank">Islandize Algorithm Rank</button>
-            <button class="button" data-sort-by="name">name</button>
-        </div>
+    $('#_IMG81129').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_81.12.9.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/IMG_81.12.9.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_81.12.9.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_81.12.9.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_81.12.9.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_81.12.9.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-        <section class="gallery">
-            <article class="photo">
-                <a href="images/original/IMG_78.38.31.jpg" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption='Original Image
-<div class="lightboxCircleContainer">
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="95.2" fill="pink" />
-                </svg>
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="97" fill="pink" />
-                </svg>
+    $('#_IMG811210').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_81.12.10.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/IMG_81.12.10.png',
+                'thumb': 'images//thumbs/401-500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_81.12.10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_81.12.10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_81.12.10.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_81.12.10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="100" fill="pink" />
-                </svg>
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="89" fill="pink" />
-                </svg>
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="98" fill="pink" />
-                </svg>
-                <svg class="circles" viewBox="0 0 200 200">
-                    <circle cx="100" cy="100" r="100" fill="gray" />
-                    <circle cx="100" cy="100" r="92" fill="pink" />
-                </svg>
-                </div>'>
-                    <figure>
-                        <img src="images/IMG_78.38.31.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_78.38.31</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="95.2" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="97" fill="pink" />
-                                </svg>
+    $('#_82225').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/82_22_5.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/82_22_5.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/82_22_5.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/82_22_5.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/82_22_5.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/82_22_5.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="100" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="89" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="98" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="92" fill="pink" />
-                                </svg>
-                            </div>
-                                <span class="meanrank">5.8</span>
-                                <span class="plainrank">4</span>
-                                <span class="crayolarank">1</span>
-                                <span class="recolorrank">12</span>
-                                <span class="recolorrank">3</span>
-                                <span class="islandizerank">9</span>
-                            </p></figcaption>
-                    </figure>
-                </a>
-                <a href="images/plain/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Plain Image" style="display:none;"></a>
-                <a href="images/crayola/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Crayola Image" style="display:none;"></a>
-                <a href="images/recolor/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Recolor Image" style="display:none;"></a>
-                <a href="images/toon/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Toon Image" style="display:none;"></a>
-                <a href="images/islandize/IMG_78.38.31.png" class="fancyboxGallery" data-fancybox="IMG_78_38_31Group" data-caption="Islandize Image" style="display:none;"></a>
-            </article>
-            <article class="photo">
-                <a href="images/TI_5_a.jpg">
-                    <figure>
-                        <img src="images/TI_5_a.jpg" alt="">
-                        <figcaption>
-                            <p> Name: <span class="name">TI_5_a</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="60.25" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="49" fill="pink" />
-                                </svg>
+    $('#_822216').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/82_22_16.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/82_22_16.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/82_22_16.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/82_22_16.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/82_22_16.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/82_22_16.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="-2064" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="17" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="85" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="90" fill="pink" />
-                                </svg>
-                            </div>
-                             <span class="meanrank">40.75</span>
-                             <span class="plainrank">52</span>
-                            <span class="crayolarank">2163</span>
-                            <span class="recolorrank">84</span>
-                            <span class="toonrank">16</span>
-                            <span class="islandizerank">11</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/IMG_79.17.jpg">
-                    <figure>
-                        <img src="images/IMG_79.17.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_79.17</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="84" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="98" fill="pink" />
-                                </svg>
+    $('#_852410').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/85_24_10.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/85_24_10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/85_24_10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/85_24_10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/85_24_10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/85_24_10.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="69" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="93" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="95" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="87" fill="pink" />
-                                </svg>
-                            </div>
-                                <span class="meanrank">13</span>
-                                <span class="plainrank">7</span>
-                                <span class="crayolarank">32</span>
-                                <span class="recolorrank">8</span>
-                                <span class="toonrank">4</span>
-                                <span class="islandizerank">14</span>
-                            </p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/91_42_1.jpg">
-                    <figure>
-                        <img src="images/91_42_1.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">91_42_1</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="71.6" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="72" fill="pink" />
-                                </svg>
+    $('#_IMG8642').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/IMG_86.4.2.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/IMG_86.4.2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/IMG_86.4.2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/IMG_86.4.2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/IMG_86.4.2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/IMG_86.4.2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="59" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="61" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="81" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="80" fill="pink" />
-                                </svg>
-                            </div>
-                                <span class="meanrank">30.4</span>
-                                <span class="plainrank">29</span>
-                                <span class="crayolarank">42</span>
-                                <span class="recolorrank">40</span>
-                                <span class="toonrank">20</span>
-                                <span class="islandizerank">21</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/A_1_775_B.jpg">
-                    <figure>
-                        <img src="images/A_1_775_B.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">A_1_775_B</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="75.6" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="78" fill="pink" />
-                                </svg>
+    $('#_9224').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/92_24.jpg',
+                'thumb': 'images/thumbs/1-100.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/92_24.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/92_24.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/92_24.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/92_24.png',
+                'thumb': 'images//thumbs/1-100.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/92_24.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="72" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="62" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="75" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="76" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">34.4</span>
-                            <span class="plainrank">33</span>
-                            <span class="crayolarank">39</span>
-                            <span class="recolorrank">49</span>
-                            <span class="toonrank">26</span>
-                            <span class="islandizerank">25</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/IMG_79.27.A.jpg">
-                    <figure>
-                        <img src="images/IMG_79.27.A.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_79.27.A</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="73.2" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="76" fill="pink" />
-                                </svg>
+    $('#_95184cover').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/95_18_4_cover.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/95_18_4_cover.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/95_18_4_cover.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/95_18_4_cover.png',
+                'thumb': 'images//thumbs/401-500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/95_18_4_cover.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/95_18_4_cover.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="17" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="53" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="73" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="95" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">38.2</span>
-                            <span class="plainrank">25</span>
-                            <span class="crayolarank">84</span>
-                            <span class="recolorrank">48</span>
-                            <span class="toonrank">28</span>
-                            <span class="islandizerank">6</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/IMG_79.56.4.jpg">
-                    <figure>
-                        <img src="images/IMG_79.56.4.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_79.56.4</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="53.2" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="59" fill="pink" />
-                                </svg>
+    $('#_M200422').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/M_2004_2_2.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/M_2004_2_2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/M_2004_2_2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/M_2004_2_2.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/M_2004_2_2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/M_2004_2_2.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="78" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="16" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="71" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="56" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">47.2</span>
-                            <span class="plainrank">42</span>
-                            <span class="crayolarank">33</span>
-                            <span class="recolorrank">86</span>
-                            <span class="toonrank">30</span>
-                            <span class="islandizerank">45</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/IMG_79.63.13.jpg">
-                    <figure>
-                        <img src="images/IMG_79.63.13.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_79.63.13</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="38.8" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="48" fill="pink" />
-                                </svg>
+    $('#_M20051711').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/M_2005_17_11.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/M_2005_17_11.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/M_2005_17_11.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/M_2005_17_11.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/M_2005_17_11.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/M_2005_17_11.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="82.54938" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="26" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="56" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="44" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">61.2</span>
-                            <span class="plainrank">53</span>
-                            <span class="crayolarank">17.54938</span>
-                            <span class="recolorrank">74</span>
-                            <span class="toonrank">45</span>
-                            <span class="islandizerank">67</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/M_2014_1_1.jpg">
-                    <figure>
-                        <img src="images/M_2014_1_1.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">M_2014_1_1</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="96" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="100" fill="pink" />
-                                </svg>
+    $('#_M20051730').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/M_2005_17_30.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/M_2005_17_30.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/M_2005_17_30.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/M_2005_17_30.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/M_2005_17_30.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/M_2005_17_30.png',
+                'thumb': 'images//thumbs/401-500.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="-3621" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="100" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="99" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="85" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">5</span>
-                            <span class="plainrank">1</span>
-                            <span class="crayolarank">3520</span>
-                            <span class="recolorrank">1</span>
-                            <span class="toonrank">2</span>
-                            <span class="islandizerank">16</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/84_7.jpg">
-                    <figure>
-                        <img src="images/84_7.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">84_7</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="90.75" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="90" fill="pink" />
-                                </svg>
+    $('#_hawkinsTL201756').on('click', function() {
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": 'images/original/hawkins-TL_2017_56.jpg',
+                'thumb': 'images/thumbs/over500.png',
+                'subHtml': '<p>This is some text</p>'
+            }, {
+                "src": 'images/pixel/hawkins-TL_2017_56.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Pixel</h4><p><strong>Pixel Algortithm:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed ex facilisis, faucibus tellus in, tempus nulla. Phasellus venenatis risus ut felis tempor, in eleifend nulla scelerisque. Nam eu pharetra lorem, sit amet ultricies ante. Phasellus ultrices sagittis mi, sed dictum felis lobortis ac. Aliquam rhoncus eros sapien, sed gravida urna rutrum quis. Cras et egestas mi. Suspendisse in ornare ex, sit amet fermentum ex. Morbi vitae justo lacus. Suspendisse non tincidunt mi. Fusce varius ante non posuere laoreet.</p>"'
+            }, {
+                "src": 'images/crayola/hawkins-TL_2017_56.png',
+                'thumb': 'images//thumbs/301-400.png',
+                'subHtml': '<h4>Crayola</h4><p><strong>Crayola Algortithm:</strong> Cras eget enim eget justo sodales varius at eget est. Nulla tristique dignissim libero et porttitor. Phasellus lobortis volutpat dolor nec tempor. Maecenas eu auctor ex. Praesent lectus dui, porta at sagittis non, pulvinar et ipsum. Proin dignissim risus at elit interdum, sed varius eros euismod. Praesent in nulla a leo mattis venenatis ut quis nunc. Donec mollis ullamcorper suscipit. In in sapien id sem pulvinar fringilla. Aenean sollicitudin et eros non tristique. Proin quis urna quis felis sagittis suscipit. Suspendisse volutpat commodo scelerisque. Donec vulputate odio libero, vitae bibendum ex venenatis vitae. Mauris interdum, mauris ut molestie bibendum, sapien libero cursus est, ac suscipit risus nunc eget dui. Vivamus id velit quis dolor tincidunt suscipit.</p>'
+            }, {
+                "src": 'images/recolor/hawkins-TL_2017_56.png',
+                'thumb': 'images//thumbs/over500.png',
+                'subHtml': '<h4>Recolor</h4><p><strong>Recolor Algorithm: </strong> Duis interdum, nisi ac maximus feugiat, mi ligula ullamcorper nisi, vel aliquam lacus sem eu velit. Sed eget facilisis sapien, in volutpat metus. Cras finibus purus metus, id accumsan libero consectetur sed. Vivamus euismod augue a eros pellentesque varius. Nulla facilisi. Etiam tincidunt, arcu eget vulputate venenatis, turpis neque dictum velit, ut tincidunt nisl sem sed odio. Nulla aliquam nulla vitae magna fringilla semper. Proin ultricies tortor vitae lobortis mollis. In id consequat nisi. Suspendisse fringilla mollis viverra. Fusce gravida risus nunc, nec sodales odio finibus in. Cras non nisi dapibus, elementum massa et, lacinia ex. Nullam sodales felis non feugiat ultricies. Nullam iaculis justo nunc, quis mattis quam feugiat in. Donec varius iaculis dui vitae ultricies.</p>'
+            }, {
+                "src": 'images/toon/hawkins-TL_2017_56.png',
+                'thumb': 'images//thumbs/101-200.png',
+                'subHtml': '<h4>Toon</h4><p><strong>Toon Algortithm:</strong> Aliquam nec est in enim tincidunt eleifend et non libero. Curabitur vel sapien sit amet nisi lobortis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut mauris sapien, semper elementum arcu a, condimentum sodales augue. Praesent aliquam odio at justo iaculis, at hendrerit mi hendrerit. Mauris elementum tellus faucibus, pellentesque purus ut, pellentesque tellus. Pellentesque fermentum faucibus semper. Mauris vel nunc eu ante vulputate auctor quis eget elit. Pellentesque ornare magna id neque pellentesque, vel finibus erat faucibus.</p>'
+            }, {
+                "src": 'images/islandize/hawkins-TL_2017_56.png',
+                'thumb': 'images//thumbs/201-300.png',
+                'subHtml': '<h4>Islandize</h4><p><strong>Islandize Algortithm:Sed commodo viverra sem, vitae volutpat lectus accumsan ac. Etiam vel libero eu est rhoncus vulputate sed ac lorem. In hac habitasse platea dictumst. Nulla pretium porta orci, et tincidunt odio auctor vel. Proin elementum sit amet sapien nec fermentum. In sodales imperdiet enim, non ultrices nisl laoreet vel. Suspendisse non eros ac nisi pulvinar tincidunt. Cras sed lacinia diam. Maecenas justo dolor, eleifend eget scelerisque eleifend, bibendum ut nisl. Etiam vitae eros at velit porta lobortis.<strong></p>'
+            }],
+            thumbWidth: 50,
+            thumbHeight: '50px',
+            thumbContHeight: 70,
+            loadVimeoThumbnail: false
+        });
+    });
+})
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="-2671" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="96" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="93" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="84" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">10.25</span>
-                            <span class="plainrank">11</span>
-                            <span class="crayolarank">2772</span>
-                            <span class="recolorrank">5</span>
-                            <span class="toonrank">8</span>
-                            <span class="islandizerank">17</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/IMG_81.13.11.jpg">
-                    <figure>
-                        <img src="images/IMG_81.13.11.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">IMG_81.13.11</span><br />
-                            <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="86.5" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="92" fill="pink" />
-                                </svg>
+</script>
+<header class="masthead">
+    <h1 class="site-title">Digital Pink</h1>
+    <p class="site-description">An exploration of the algorithms supporting the curation process.</p>
+</header><!-- .masthead -->
+<main class="main-area">
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="-368" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="77" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="95" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="82" fill="pink" />
-                                </svg>
-                            </div>
-                            <span class="meanrank">14.5</span>
-                            <span class="plainrank">9</span>
-                            <span class="crayolarank">469</span>
-                            <span class="recolorrank">24</span>
-                            <span class="toonrank">6</span>
-                            <span class="islandizerank">19</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-            <article class="photo">
-                <a href="images/77_53_19.jpg">
-                    <figure>
-                        <img src="images/77_53_19.jpg" alt="">
-                        <figcaption>
-                            <p>Name: <span class="name">77_53_19</span><br />
-                                <div class="circleContainer">
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="74" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="75" fill="pink" />
-                                </svg>
+    <div id="sorts" class="button-group">
+        <button class="button is-checked" data-sort-by="meanrank">Mean</button>
+        <button class="button" data-sort-by="pixelrank">Pixel</button>
+        <button class="button" data-sort-by="crayolarank">Crayola</button>
+        <button class="button" data-sort-by="recolorrank">Recolor</button>
+        <button class="button" data-sort-by="toonrank">Toon</button>
+        <button class="button" data-sort-by="islandizerank">Islandize</button>
+    </div>
 
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="89" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="66" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="76" fill="pink" />
-                                </svg>
-                                <svg class="circles" viewBox="0 0 200 200">
-                                    <circle cx="100" cy="100" r="100" fill="gray" />
-                                    <circle cx="100" cy="100" r="-11" fill="pink" />
-                                </svg>
-                        </div>
-                            <span class="meanrank">27</span>
-                            <span class="plainrank">26</span>
-                            <span class="crayolarank">12</span>
-                            <span class="recolorrank">45</span>
-                            <span class="toonrank">25</span>
-                            <span class="islandizerank">111</span></p></figcaption>
-                    </figure>
-                </a>
-            </article>
-        </section><!-- .gallery -->
-    </main>
+    <section class="gallery">
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_657I">
+                <img src="images/original/65_7_I.jpg " alt="">
+            </a>
+            <span class="meanrank">49.75</span>
+            <span class="pixelrank">58</span>
+            <span class="crayolarank">1340</span>
+            <span class="recolorrank">73</span>
+            <span class="toonrank">53</span>
+            <span class="islandizerank">15</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG783820">
+                <img src="images/original/IMG_78.38.20.jpg " alt="">
+            </a>
+            <span class="meanrank">42.5</span>
+            <span class="pixelrank">23</span>
+            <span class="crayolarank">1006</span>
+            <span class="recolorrank">41</span>
+            <span class="toonrank">22</span>
+            <span class="islandizerank">84</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG783831">
+                <img src="images/original/IMG_78.38.31.jpg " alt="">
+            </a>
+            <span class="meanrank">3.8</span>
+            <span class="pixelrank">3</span>
+            <span class="crayolarank">1</span>
+            <span class="recolorrank">1</span>
+            <span class="toonrank">2</span>
+            <span class="islandizerank">12</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_79525">
+                <img src="images/original/79_52_5.jpg " alt="">
+            </a>
+            <span class="meanrank">61.75</span>
+            <span class="pixelrank">99</span>
+            <span class="crayolarank">18</span>
+            <span class="recolorrank">135</span>
+            <span class="toonrank">74</span>
+            <span class="islandizerank">56</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_7954F">
+                <img src="images/original/79_54_F.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">2481</span>
+            <span class="crayolarank">2757</span>
+            <span class="recolorrank">2529</span>
+            <span class="toonrank">2269</span>
+            <span class="islandizerank">2946</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_7954K">
+                <img src="images/original/79_54_K.jpg " alt="">
+            </a>
+            <span class="meanrank">55</span>
+            <span class="pixelrank">88</span>
+            <span class="crayolarank">8</span>
+            <span class="recolorrank">53</span>
+            <span class="toonrank">71</span>
+            <span class="islandizerank">433</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG802810">
+                <img src="images/original/IMG_80.28.10.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">204</span>
+            <span class="crayolarank">228</span>
+            <span class="recolorrank">403</span>
+            <span class="toonrank">148</span>
+            <span class="islandizerank">256</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG81129">
+                <img src="images/original/IMG_81.12.9.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">1398</span>
+            <span class="crayolarank">2326</span>
+            <span class="recolorrank">8480</span>
+            <span class="toonrank">1235</span>
+            <span class="islandizerank">995</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG811210">
+                <img src="images/original/IMG_81.12.10.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">409</span>
+            <span class="crayolarank">1166</span>
+            <span class="recolorrank">8471</span>
+            <span class="toonrank">328</span>
+            <span class="islandizerank">657</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_82225">
+                <img src="images/original/82_22_5.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">338</span>
+            <span class="crayolarank">814</span>
+            <span class="recolorrank">251</span>
+            <span class="toonrank">257</span>
+            <span class="islandizerank">801</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_822216">
+                <img src="images/original/82_22_16.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">3566</span>
+            <span class="crayolarank">11123</span>
+            <span class="recolorrank">2899</span>
+            <span class="toonrank">3258</span>
+            <span class="islandizerank">5365</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_852410">
+                <img src="images/original/85_24_10.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">4257</span>
+            <span class="crayolarank">11130</span>
+            <span class="recolorrank">3258</span>
+            <span class="toonrank">4092</span>
+            <span class="islandizerank">5658</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_IMG8642">
+                <img src="images/original/IMG_86.4.2.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">753</span>
+            <span class="crayolarank">2184</span>
+            <span class="recolorrank">9174</span>
+            <span class="toonrank">630</span>
+            <span class="islandizerank">10085</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_9224">
+                <img src="images/original/92_24.jpg " alt="">
+            </a>
+            <span class="meanrank">48</span>
+            <span class="pixelrank">70</span>
+            <span class="crayolarank">3881</span>
+            <span class="recolorrank">25</span>
+            <span class="toonrank">49</span>
+            <span class="islandizerank">335</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_95184cover">
+                <img src="images/original/95_18_4_cover.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">381</span>
+            <span class="crayolarank">501</span>
+            <span class="recolorrank">480</span>
+            <span class="toonrank">287</span>
+            <span class="islandizerank">6711</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_M200422">
+                <img src="images/original/M_2004_2_2.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">631</span>
+            <span class="crayolarank">2007</span>
+            <span class="recolorrank">395</span>
+            <span class="toonrank">573</span>
+            <span class="islandizerank">2269</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_M20051711">
+                <img src="images/original/M_2005_17_11.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">695</span>
+            <span class="crayolarank">723</span>
+            <span class="recolorrank">511</span>
+            <span class="toonrank">571</span>
+            <span class="islandizerank">254</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_M20051730">
+                <img src="images/original/M_2005_17_30.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">125</span>
+            <span class="crayolarank">167</span>
+            <span class="recolorrank">125</span>
+            <span class="toonrank">113</span>
+            <span class="islandizerank">404</span>
+        </article>
+        <article class="pinkart">
+            <a href="javascript:void(0)" id="_hawkinsTL201756">
+                <img src="images/original/hawkins-TL_2017_56.jpg " alt="">
+            </a>
+            <span class="meanrank">1000</span>
+            <span class="pixelrank">185</span>
+            <span class="crayolarank">310</span>
+            <span class="recolorrank">12125</span>
+            <span class="toonrank">137</span>
+            <span class="islandizerank">211</span>
+        </article></section> <!-- .gallery --></main>
 
-    <script src="JS/libs/jquery-3.1.1.min.js"></script>
-    <script src="JS/libs/isotope.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-    <script src="JS/digitalPink.js"></script>
-    <script src="JS/fancyboxGroups.js"></script>
+<script src="JS/libs/isotope.pkgd.min.js"></script>
+<script src="JS/digitalPink.js"></script>
 
 </body>
-
 </html>
+
