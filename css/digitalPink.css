@@ -273,6 +273,20 @@ Pager
     border: 2px solid transparent;
 }
 
+@font-face {
+	font-family: 'gt-walsheim-regular';
+	src: url("../fonts/GT-Walsheim-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family: 'gt-walsheim-bold';
+	src: url("../fonts/GT-Walsheim-Bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal
+}
+
 /* ---- button ---- */
 #sorts {
 	margin: 14px 20px 0 10px;
