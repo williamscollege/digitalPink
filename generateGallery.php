@@ -118,7 +118,13 @@ function generateGallerySidecards ()
         }
 
         //Close the script for each image
-        $pinkgallery .= "],
+        $pinkgallery .= "],	
+                share: false,
+                autoplayControls: false,
+                download: false,
+                actualSize: false,
+                fullScreen: false,
+                toogleThumb: false,
                 thumbWidth: 50,
                 thumbHeight: '50px',
                 thumbContHeight: 70,
