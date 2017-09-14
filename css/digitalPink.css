@@ -1,15 +1,33 @@
 @font-face {
     font-family: 'gt-walsheim-regular';
-    src: url("../fonts/GT-Walsheim-Regular.woff") format("woff");
+    src: url("../fonts/GT-Walsheim-Regular.eot");
+    src: url("../fonts/GT-Walsheim-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Walsheim-Regular.woff") format("woff"), url("fonts/GT-Walsheim-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'gt-walsheim-regular';
+    src: url("../fonts/GT-Walsheim-Regular-Oblique.eot");
+    src: url("../fonts/GT-Walsheim-Regular-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Walsheim-Regular-Oblique.woff") format("woff"), url("fonts/GT-Walsheim-Regular-Oblique.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'gt-walsheim-bold';
+    src: url("../fonts/GT-Walsheim-Bold.eot");
+    src: url("../fonts/GT-Walsheim-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Walsheim-Bold.woff") format("woff"), url("fonts/GT-Walsheim-Bold.ttf") format("truetype");
     font-weight: normal;
     font-style: normal
 }
 
 @font-face {
     font-family: 'gt-walsheim-bold';
-    src: url("../fonts/GT-Walsheim-Bold.woff") format("woff");
+    src: url("../fonts/GT-Walsheim-Bold-Oblique.eot");
+    src: url("../fonts/GT-Walsheim-Bold-Oblique.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Walsheim-Bold-Oblique.woff") format("woff"), url("fonts/GT-Walsheim-Bold-Oblique.ttf") format("truetype");
     font-weight: normal;
-    font-style: normal
+    font-style: italic
 }
 
 /* ---- isotope ---- */
@@ -211,6 +229,10 @@ Pager
 
 .lg-outer .lg-thumb-item img {
     /*    height: 55px; !important; */
+    /* margin-right: -1px; */
+    width: 46px;
+    height: 46px;
+    object-fit: unset;
 }
 
 .lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {
@@ -218,11 +240,12 @@ Pager
 }
 
 .lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {
-    border-color: gray;
+    border-color: white;
 }
 
 .lg-outer .lg-thumb-item {
-    border: 2px solid transparent;
+    border: 2px solid gray;
+    border-radius: 50%;
 }
 
 .lg-sub-html {
@@ -374,16 +397,18 @@ Header styles
     text-align: center;
     position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: 40px;
     z-index: 10;
     font-family: 'gt-walsheim-regular', monospace;
-    margin-left: -10px;
+    /* margin-left: -10px; */
 }
 
 .site-title {
     margin: 0;
-    padding: 6px 0 0 .5em;
+    padding: 6px 0 0 13px;
     font-size: 2em;
     font-weight: 400;
     color: white;
@@ -396,6 +421,14 @@ Header styles
 
 nav {
     margin: 14px 0 0 0;
-    padding: 0 .5em 0 .5em;
+    padding: 0 13px 0 .5em;
     float:right;
+}
+
+.lg-thumb div:first-child {
+    background-color: gray;
+}
+
+.lg-thumb div:first-child img {
+    display: none;
 }
